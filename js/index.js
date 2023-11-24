@@ -26,5 +26,34 @@ for (let i = 0; i < skills.length; i++) {
     skill.innerHTML = skills[i];
     skillsList.appendChild(skill);
   }
+  var messageForm= document.querySelector('[name="leave_message"]');
+  messageForm.addEventListener("submit",function(event){
+    event.preventDefault()
+    console.log("im here");
+    let userName = event.target.usersName.value;
+    let userEmail = event.target.usersEmail.value;
+    let userMessage = event.target.usersMessage.value;
+    console.log(userName);
+    console.log(userEmail);
+    console.log(userMessage);
+    let messageSection= document.getElementById("messages");
+    let messageList= messageSection.querySelector("ul");
+    let newMessage = document.createElement("li");
+    newMessage.innerHTML ='<a href= "' +userEmail+'">'+userEmail +'</a>'+'<span"' +userMessage+'">'+userMessage +'</span>';
+    let removeButton = document. createElement('button');
+    removeButton.innerText= "remove";
+    removeButton.addEventListener("click", function(){
+    let entry = removeButton.parentElement;
+    entry.remove();
+
+  });
+  newMessage.appendChild(removeButton);
+  messageList.appendChild(newMessage);
+
+    messageForm.reset();
+  
+
+  })
+
   
 
