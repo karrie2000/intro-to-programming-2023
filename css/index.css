@@ -1,0 +1,91 @@
+body{
+    background-color:pink;
+    color: rgb(56, 187, 235);
+    font-family:'Times New Roman', Times, serif;
+    margin: 50px;
+    padding: 50px;
+  }
+  h1{
+    font-size: 40px;
+    font-weight:bold;
+    color: blue;
+}
+
+  h2{
+    font-size: 25px;
+    font-weight:bold;
+    color: blue;
+}
+  p{
+    font-size: 20px;
+    font-weight:normal;
+    color:  rgb(56, 187, 235);
+
+}
+  #experience{
+    list-style-type: square;
+    font-size: 18px;
+    width: 350px;
+    height: 190px;
+    padding: 10px;
+    margin-bottom: 60px
+}
+
+  #skills{
+    list-style-type: square;
+    font-size: 18px;
+    width: 350px;
+    height: 170px;
+    padding: 10px;
+    
+  }
+
+  .leaveMessage{
+    font-size:  18px;
+    color: rgb(235, 131, 52);
+  }
+  .responses{
+    padding: 10px;
+    border: 2px solid rgb(52, 235, 76);
+    margin: 12px;
+  }
+  .submitBtn{
+    background-color: orange;
+    border: 2px solid rgb(168, 70, 5);
+  }
+  .messages{
+    list-style-type: none;
+  }
+
+  .messagesStyle{
+    font-size: 20px;
+    color: rgb(86, 5, 168);
+    border: 2px solid rgb(0, 0, 255);
+    padding: 5px;
+    margin: 5px;
+    
+  }
+  .colors{
+    border: 10px solid rgb(0, 0, 255);
+    background-color: rgb(208, 255, 0);
+  }
+  .messagesStyle{
+    border: 10px solid rgb(0, 0, 255);
+    background-color: rgb(208, 255, 0);
+
+  }
+ .removeBtn{
+    background-color: pink;
+    border: 5px solid #AA336A ;
+ }
+
+ footer{
+    border: 10px double #AA336A ;
+    position: static;
+    height: 80px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(255, 105, 180);
+
+ }

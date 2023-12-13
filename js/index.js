@@ -39,9 +39,11 @@ for (let i = 0; i < skills.length; i++) {
     let messageSection= document.getElementById("messages");
     let messageList= messageSection.querySelector("ul");
     let newMessage = document.createElement("li");
+    newMessage.classList.add("messagesStyle");
     newMessage.innerHTML ='<a href= "' +userEmail+'">'+userEmail +'</a>'+'<span"' +userMessage+'">'+userMessage +'</span>';
     let removeButton = document. createElement('button');
     removeButton.innerText= "remove";
+    removeButton.classList.add("removeBtn");
     removeButton.addEventListener("click", function(){
     let entry = removeButton.parentElement;
     entry.remove();

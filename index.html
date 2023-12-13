@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body>
+<body id="background">
     <h1>Karrington Gatlin</h1>
     <section>
         <h2>About</h2>
         <p>I am a 22-year-old aspiring Software Engineer. After speaking with a close family member who was studying cyber security, I was inspired to investigate the tech world more for myself. From there I discovered some amazing fellow programmers on YouTube who helped solidify my choice in changing my career path. While developing strong communication skills within a team environment, I made a concerted effort to pursue my
 dream through coding and tech webinars while challenging myself to build difficult projects.</p>
     </section>
-    <section>
+    <section id="experience" class="colors">
         <h2>Experience</h2>
         <ul>
             <li>Intro to Programming Student</li>
@@ -23,7 +24,7 @@ dream through coding and tech webinars while challenging myself to build difficu
             <li>Office Assitant at City of Arlington</li>
         </ul>
     </section>
-    <section id="skills">
+    <section id="skills" class="colors">
         <h2>Skills</h2>
         <ul>
         
@@ -33,22 +34,22 @@ dream through coding and tech webinars while challenging myself to build difficu
     <section>
 
         <h2>Connect</h2>
-        <h2>gatlinkarrington21@gmail.com</h2>
+        <h3>gatlinkarrington21@gmail.com</h3>
         <a href="https://github.com/karrie2000">Github</a>
         <a href="https://www.linkedin.com/in/karringtongatlin"> Linkedin</a>
     </section>
-    <section>
+    <section class="leaveMessage">
         <h2>Leave a Message</h2>
         <form name="leave_message">
         <label for="usersName">Name</label>
-        <input type="text" name="usersName" id="usersName" required> 
+        <input class="responses" type="text" name="usersName" id="usersName" required> 
         <br>
         <label for="usersEmail">Email</label>
-        <input type="email" name="usersEmail" id="usersEmail" required>
+        <input class="responses" type="email" name="usersEmail" id="usersEmail" required>
         <br>
-        <textarea name="usersMessage"  id="usersMessage" cols="30" rows="10" required></textarea>
+        <textarea class="responses" name="usersMessage"  id="usersMessage" cols="30" rows="10" required></textarea>
         <label for="usersMessage">Message</label>
-        <button type="submit" name="submit" id="submit">Submit</button>
+        <button class="submitBtn"  type="submit" name="submit" id="submit">Submit</button>
     </form>
     </section>
     <section id="messages">
