@@ -7,10 +7,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
-
 <body id="background">
-    <h1>Karrington Gatlin</h1>
-    <section>
+<div class="container">
+    
+    <main>Main</main>
+    <div id="sidebar">Sidebar</div>
+    <div id="content1">Content 1</div>
+    <div id="content2">Content 2</div>
+    <div id="content3">Content 3</div>
+    <footer>Footer</footer>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#connect">Connect</a></li>
+        </ul>
+    </nav>
+<main>
+    <section id="about">
+        <h1>Karrington Gatlin</h1>
         <h2>About</h2>
         <p>I am a 22-year-old aspiring Software Engineer. After speaking with a close family member who was studying cyber security, I was inspired to investigate the tech world more for myself. From there I discovered some amazing fellow programmers on YouTube who helped solidify my choice in changing my career path. While developing strong communication skills within a team environment, I made a concerted effort to pursue my
 dream through coding and tech webinars while challenging myself to build difficult projects.</p>
@@ -24,6 +41,7 @@ dream through coding and tech webinars while challenging myself to build difficu
             <li>Office Assitant at City of Arlington</li>
         </ul>
     </section>
+    <div id="sidebar">
     <section id="skills" class="colors">
         <h2>Skills</h2>
         <ul>
@@ -31,13 +49,16 @@ dream through coding and tech webinars while challenging myself to build difficu
         </ul>
 
     </section>
-    <section>
+    </div>
+    <div id="content2">
+    <section id="connect">
 
         <h2>Connect</h2>
         <h3>gatlinkarrington21@gmail.com</h3>
         <a href="https://github.com/karrie2000">Github</a>
         <a href="https://www.linkedin.com/in/karringtongatlin"> Linkedin</a>
     </section>
+    
     <section class="leaveMessage">
         <h2>Leave a Message</h2>
         <form name="leave_message">
@@ -49,19 +70,28 @@ dream through coding and tech webinars while challenging myself to build difficu
         <br>
         <textarea class="responses" name="usersMessage"  id="usersMessage" cols="30" rows="10" required></textarea>
         <label for="usersMessage">Message</label>
+        <br>
         <button class="submitBtn"  type="submit" name="submit" id="submit">Submit</button>
     </form>
     </section>
+    </div>
+    <div id="content3">
     <section id="messages">
         <h2>Messages</h2>
         <ul>
 
         </ul>
     </section>
-<footer>
+    </div>
+ <footer>
     <!-- <p>&copy;Copyright</p> -->
-</footer>
+    
+ </footer>
+</main>
+</div>
 <script src="js/index.js"></script>
 </body>
+
+
 
 </html>

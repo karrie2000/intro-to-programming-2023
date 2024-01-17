@@ -1,91 +1,120 @@
-body{
-    background-color:pink;
-    color: rgb(56, 187, 235);
-    font-family:'Times New Roman', Times, serif;
-    margin: 50px;
-    padding: 50px;
-  }
-  h1{
-    font-size: 40px;
-    font-weight:bold;
-    color: blue;
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  grid-template-areas:
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
+    grid-gap:0.2rem;
+}
+nav{
+  grid-area: nav;
+  background-color: blueviolet;
+}
+.navbar ul {
+  list-style-type: none;
+  background-color:#e54b9a;
+  color:#F2F2F2;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+   grid-area:nav;
+}
+.navbar a {
+  color: #FF851B;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
 }
 
-  h2{
-    font-size: 25px;
-    font-weight:bold;
-    color: blue;
-}
-  p{
-    font-size: 20px;
-    font-weight:normal;
-    color:  rgb(56, 187, 235);
-
-}
-  #experience{
-    list-style-type: square;
-    font-size: 18px;
-    width: 350px;
-    height: 190px;
-    padding: 10px;
-    margin-bottom: 60px
+.navbar a:hover {
+  background-color: #36A2EB;
 }
 
-  #skills{
-    list-style-type: square;
-    font-size: 18px;
-    width: 350px;
-    height: 170px;
-    padding: 10px;
-    
+.navbar li {
+  float: left;
+}
+main{
+  grid-area: main;
+  background-color: pink;
+}
+#sidebar{
+  grid-area: sidebar;
+  background-color: aqua;
+  
+}
+#skills{
+  grid-area:sidebar;
+  background-color: rgb(206, 93, 13); 
+  list-style-type: square;
+  font-size: 18px;
+  width: 350px;
+  height: 170px;
+  padding: 10px;
+  
+}
+#content1{
+  grid-area:content1;
+  background-color: rgb(34, 31, 224);
+}
+#experience{
+  grid-area:main;
+  background-color: rgb(91, 178, 233); 
+  list-style-type: square;
+  font-size: 18px;
+  width: 350px;
+  height: 190px;
+  padding: 10px;
+  margin-bottom: 60px
+}
+#content2{
+  grid-area:content2;
+  background-color: rgb(45, 218, 120);
+}
+#content3{
+  grid-area:content3;
+  background-color: rgb(203, 164, 24);
+}
+.messagesStyle{
+  font-size: 20px;
+  color: rgb(86, 5, 168);
+  border: 10px solid rgb(0, 0, 255);
+  background-color: rgb(208, 255, 0);
+  padding: 5px;
+  margin: 5px;
+  
+}
+.colors{
+  border: 10px solid rgb(0, 0, 255);
+  background-color: rgb(208, 255, 0);
+  
+}
+.removeBtn{
+  background-color: pink;
+  border: 5px solid #AA336A ;
+}
+footer{
+  grid-area:footer;
+  background-color: rgb(224, 39, 113);
+}
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas:
+      "nav"
+      "sidebar"
+      "main"
+      "content1"
+      "content2"
+      "content3"
+      "footer";
   }
-
-  .leaveMessage{
-    font-size:  18px;
-    color: rgb(235, 131, 52);
-  }
-  .responses{
-    padding: 10px;
-    border: 2px solid rgb(52, 235, 76);
-    margin: 12px;
-  }
-  .submitBtn{
-    background-color: orange;
-    border: 2px solid rgb(168, 70, 5);
-  }
-  .messages{
-    list-style-type: none;
-  }
-
-  .messagesStyle{
-    font-size: 20px;
-    color: rgb(86, 5, 168);
-    border: 2px solid rgb(0, 0, 255);
-    padding: 5px;
-    margin: 5px;
-    
-  }
-  .colors{
-    border: 10px solid rgb(0, 0, 255);
-    background-color: rgb(208, 255, 0);
-  }
-  .messagesStyle{
-    border: 10px solid rgb(0, 0, 255);
-    background-color: rgb(208, 255, 0);
-
-  }
- .removeBtn{
-    background-color: pink;
-    border: 5px solid #AA336A ;
- }
-
- footer{
-    border: 10px double #AA336A ;
-    position: static;
-    height: 80px;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    background-color: rgb(255, 105, 180);
-
- }
+}

@@ -1,5 +1,5 @@
 //hint: `new Date()` constructor
-const today = new Date();
+let today = new Date();
  let thisYear = today.getFullYear();
  //[ ] Using "DOM Selection", select the `<footer>` element from the DOM and store it in a variable named `footer`
  // - hint: `querySelector` method
@@ -26,7 +26,7 @@ for (let i = 0; i < skills.length; i++) {
     skill.innerHTML = skills[i];
     skillsList.appendChild(skill);
   }
-  var messageForm= document.querySelector('[name="leave_message"]');
+  let messageForm= document.querySelector('[name="leave_message"]');
   messageForm.addEventListener("submit",function(event){
     event.preventDefault()
     console.log("im here");
@@ -40,7 +40,7 @@ for (let i = 0; i < skills.length; i++) {
     let messageList= messageSection.querySelector("ul");
     let newMessage = document.createElement("li");
     newMessage.classList.add("messagesStyle");
-    newMessage.innerHTML ='<a href= "' +userEmail+'">'+userEmail +'</a>'+'<span"' +userMessage+'">'+userMessage +'</span>';
+    newMessage.innerHTML = '<div class="user-info">' + '<span class="user-name">' + userName + '</span>' +'<a href="' + userEmail + '">' + userEmail + '</a>'  + '<span>' + userMessage + '</span>';
     let removeButton = document. createElement('button');
     removeButton.innerText= "remove";
     removeButton.classList.add("removeBtn");
