@@ -187,7 +187,7 @@ footer {
 
 @media screen and (max-width: 576px) {
   body {
-    background-color: palevioletred;
+    background-image: radial-gradient(whitesmoke, pink);
   }
   .navbar ul {
     display: none;
@@ -204,13 +204,13 @@ footer {
 
 @media screen and (min-width: 992px) {
   body {
-    background-color: purple;
+    background-image: radial-gradient(whitesmoke, pink);
   }
 }
 
 @media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
   body {
-    background-color: dodgerblue;
+    background-image: radial-gradient(whitesmoke, pink);
   }
   h1,
   h2 {
@@ -220,3 +220,4 @@ footer {
     display: none;
   }
 }
+
